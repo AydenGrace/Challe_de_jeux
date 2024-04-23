@@ -18,8 +18,8 @@ export default function Button({
                   ? `btn-nav-primary`
                   : `btn-nav-reverse-primary`
                 : hovered
-                ? `btn-primary`
-                : `btn-reverse-primary`
+                ? `btn-nav-primary`
+                : `btn-nav-reverse-primary`
             }`
           : `btn-nav ${
               isDark

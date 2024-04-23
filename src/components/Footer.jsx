@@ -6,13 +6,23 @@ export default function Footer() {
     <footer className={`d-flex`}>
       <div className={`${styles.sections_div}`}>
         <div className={`${styles.footer_div}`}>
-          <a className={`${styles.logo}`}></a>
+          <a>
+            <img
+              src="./img/CdJ_Logo.png"
+              alt="La Challe de Jeux"
+              className={`${styles.logo}`}
+            />
+          </a>
           <h2>Nos Partenaires</h2>
           <div
             className={`d-flex w-100 justify-content-center align-items-center gap-20 mb-20`}
           >
-            <a className={`${styles.Spa}`}></a>
-            <a className={`${styles.Zooplus}`}></a>
+            <a>
+              <img src="./img/Spa.png" alt="Spa partner" />
+            </a>
+            <a>
+              <img src="./img/Zooplus.png" alt="Zooplus partner" />
+            </a>
           </div>
           <div
             className={`d-flex w-100 justify-content-center align-items-center gap-10 mb-10`}

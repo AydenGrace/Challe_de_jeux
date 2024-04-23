@@ -4,9 +4,15 @@ import styles from "./Header.module.scss";
 
 export default function Header({ handlePage = () => {} }) {
   return (
-    <header className={`d-flex justify-content-sb p-10`}>
+    <header className={`d-flex justify-content-sb align-items-center`}>
       <div className="d-flex g-20 flex-all-cont">
-        <a onClick={() => handlePage(0)} className={`${styles.logo}`}></a>
+        <a onClick={() => handlePage(0)}>
+          <img
+            src="./img/CdJ_Logo.png"
+            alt="La Challe de Jeux"
+            className={`${styles.logo}`}
+          />
+        </a>
         <nav className={`d-flex align-items-center`}>
           <Button
             message="Accueil"
@@ -50,6 +56,7 @@ export default function Header({ handlePage = () => {} }) {
           />
         </nav>
       </div>
+
       <Button message="Connexion/Inscription" />
     </header>
   );
