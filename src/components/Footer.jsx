@@ -1,12 +1,12 @@
 /* eslint-disable no-unused-vars */
 import styles from "./Footer.module.scss";
 
-export default function Footer() {
+export default function Footer({ handlePage = () => {} }) {
   return (
     <footer className={`d-flex`}>
       <div className={`${styles.sections_div}`}>
         <div className={`${styles.footer_div}`}>
-          <a>
+          <a onClick={() => handlePage(0)}>
             <img
               src="./img/CdJ_Logo.png"
               alt="La Challe de Jeux"
@@ -17,10 +17,10 @@ export default function Footer() {
           <div
             className={`d-flex w-100 justify-content-center align-items-center gap-20 mb-20`}
           >
-            <a>
+            <a onClick={() => handlePage(-1)}>
               <img src="./img/Spa.png" alt="Spa partner" />
             </a>
-            <a>
+            <a onClick={() => handlePage(-1)}>
               <img src="./img/Zooplus.png" alt="Zooplus partner" />
             </a>
           </div>
@@ -61,11 +61,13 @@ export default function Footer() {
             <p>19 rue des Arts, 59000 Lille, France</p>
           </div>
           <nav>
-            <a href="#">Politique de confidentialité</a>
-            <a href="#">Mentions légales</a>
-            <a href="#">Conditions générales de vente</a>
-            <a href="#">Conditions générales de remboursement</a>
-            <a href="#">Plan du site</a>
+            <a onClick={() => handlePage(-1)}>Politique de confidentialité</a>
+            <a onClick={() => handlePage(-1)}>Mentions légales</a>
+            <a onClick={() => handlePage(-1)}>Conditions générales de vente</a>
+            <a onClick={() => handlePage(-1)}>
+              Conditions générales de remboursement
+            </a>
+            <a onClick={() => handlePage(-1)}>Plan du site</a>
           </nav>
         </div>
         <div className={`${styles.footer_div}`}>
@@ -81,21 +83,21 @@ export default function Footer() {
         <div className={`${styles.footer_div}`}>
           <h2>Navigation</h2>
           <nav>
-            <a href="#">Accueil</a>
-            <a href="#">Concept</a>
-            <a href="#">Nos Salles</a>
-            <a href="#">Nos Résidents</a>
-            <a href="#">Contact</a>
-            <a href="#">Mon Compte</a>
+            <a onClick={() => handlePage(0)}>Accueil</a>
+            <a onClick={() => handlePage(1)}>Concept</a>
+            <a onClick={() => handlePage(2)}>Nos Salles</a>
+            <a onClick={() => handlePage(3)}>Nos Résidents</a>
+            <a onClick={() => handlePage(4)}>Contact</a>
+            <a onClick={() => handlePage(5)}>Mon Compte</a>
           </nav>
           <div className={`d-flex p-10 w-100 g-10 ${styles.socials_footer}`}>
-            <a>
+            <a onClick={() => handlePage(-1)}>
               <i className={`fa-brands fa-facebook-f`}></i>
             </a>
-            <a>
+            <a onClick={() => handlePage(-1)}>
               <i className={`fa-brands fa-instagram`}></i>
             </a>
-            <a>
+            <a onClick={() => handlePage(-1)}>
               <i className={`fa-brands fa-tiktok`}></i>
             </a>
           </div>

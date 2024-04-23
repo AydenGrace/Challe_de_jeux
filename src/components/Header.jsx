@@ -57,7 +57,12 @@ export default function Header({ handlePage = () => {} }) {
         </nav>
       </div>
 
-      <Button message="Connexion/Inscription" />
+      <Button
+        message="Connexion/Inscription"
+        handleClick={() => {
+          handlePage(5);
+        }}
+      />
     </header>
   );
 }

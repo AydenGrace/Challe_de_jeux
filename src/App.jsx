@@ -10,6 +10,8 @@ function App() {
 
   function SwitchPage(Page) {
     switch (Page) {
+      case 5: //Connect
+        break;
       case 4: //Contact
         break;
       case 3: //Nos Résidents
@@ -32,7 +34,7 @@ function App() {
       <Header handlePage={handlePage} />
       <div className="d-flex w-100 flex-column mh-100">{SwitchPage(page)}</div>
       <Socials />
-      <Footer />
+      <Footer handlePage={handlePage} />
     </>
   );
 }
