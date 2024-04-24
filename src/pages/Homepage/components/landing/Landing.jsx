@@ -2,7 +2,7 @@ import styles from "./Landing.module.scss";
 
 export default function Landing() {
   return (
-    <section className={`d-flex flex-column h-100 ${styles.Landing} p-20`}>
+    <section id="Landing" className={`d-flex flex-column h-100 ${styles.Landing} p-20`}>
       <div
         className={`d-flex flex-all-cont align-items-end justify-content-center`}
       >
@@ -18,7 +18,7 @@ export default function Landing() {
           <p>Salon de thé · Bar à chats · Escape Game</p>
           <p> Votre rendez-vous Lillois</p>
         </div>
-        <a className={`${styles.downIcon}`} href="#">
+        <a className={`${styles.downIcon}`} href="#Residents">
           <i className="fa-solid fa-arrow-down fa-2xl"></i>
         </a>
       </div>

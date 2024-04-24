@@ -90,7 +90,7 @@ export default function Footer({ handlePage = () => {} }) {
             <a onClick={() => handlePage(4)}>Contact</a>
             <a onClick={() => handlePage(5)}>Mon Compte</a>
           </nav>
-          <div className={`d-flex p-10 w-100 g-10 ${styles.socials_footer}`}>
+          <div className={`d-flex p-10 w-100 justify-content-center g-10 ${styles.socials_footer}`}>
             <a onClick={() => handlePage(-1)}>
               <i className={`fa-brands fa-facebook-f`}></i>
             </a>

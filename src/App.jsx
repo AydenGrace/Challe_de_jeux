@@ -22,7 +22,7 @@ function App() {
         break;
       case 0: //Accueil
       default:
-        return <Homepage />;
+        return <Homepage handlePage={handlePage}/>;
     }
   }
 

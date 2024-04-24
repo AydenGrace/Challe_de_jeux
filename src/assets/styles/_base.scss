@@ -4,7 +4,7 @@
      -webkit-font-smoothing: antialiased;
      -moz-osx-font-smoothing: grayscale;
      color: var(--text-color);
-     background-color: var(--gray-2);
+     background-color: var(white);
  }
 
  h1,
@@ -12,10 +12,12 @@
  h3,
  h4 {
      margin: 0;
+     font-family: var(--font-title);
  }
 
  * {
      box-sizing: border-box;
+     scroll-behavior: smooth;
  }
 
  ul {
