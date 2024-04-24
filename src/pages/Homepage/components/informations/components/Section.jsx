@@ -13,7 +13,7 @@ export default function Section({img, title, text, btn_text, btn_click, isRevers
             <Button message={btn_text} handleClick={btn_click}/>
             </div>
         </div>
-        {isReversed && <div className={`${styles.img}`} style={{backgroundImage:`url(../../../../../../public/img/${img})`}}></div>}
+        {isReversed && <div className={`${styles.img}`} style={{backgroundImage:`url(./img/${img})`}}></div>}
         
     </div>
   )
