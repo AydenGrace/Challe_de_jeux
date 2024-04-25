@@ -8,7 +8,7 @@ export default function Header({ handlePage = () => {} }) {
       <div className="d-flex g-20 flex-all-cont">
         <a onClick={() => handlePage(0)}>
           <img
-            src="./img/CdJ_Logo.png"
+            src="./img/CdJ_Logo-min.webp"
             alt="La Challe de Jeux"
             className={`${styles.logo}`}
           />

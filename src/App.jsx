@@ -4,6 +4,7 @@ import Homepage from "./pages/Homepage/Homepage";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Socials from "./components/Socials";
+import { pageContext } from "./context/context";
 
 function App() {
   const [page, setPage] = useState(0);
@@ -22,7 +23,7 @@ function App() {
         break;
       case 0: //Accueil
       default:
-        return <Homepage handlePage={handlePage}/>;
+        return <Homepage handlePage={handlePage} />;
     }
   }
 

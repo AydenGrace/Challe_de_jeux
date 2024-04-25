@@ -8,7 +8,7 @@ export default function Footer({ handlePage = () => {} }) {
         <div className={`${styles.footer_div}`}>
           <a onClick={() => handlePage(0)}>
             <img
-              src="./img/CdJ_Logo.png"
+              src="./img/CdJ_Logo-min.webp"
               alt="La Challe de Jeux"
               className={`${styles.logo}`}
             />
@@ -18,24 +18,24 @@ export default function Footer({ handlePage = () => {} }) {
             className={`d-flex w-100 justify-content-center align-items-center gap-20 mb-20`}
           >
             <a onClick={() => handlePage(-1)}>
-              <img src="./img/Spa.png" alt="Spa partner" />
+              <img src="./img/Spa-min.webp" alt="Spa partner" />
             </a>
             <a onClick={() => handlePage(-1)}>
-              <img src="./img/Zooplus.png" alt="Zooplus partner" />
+              <img src="./img/Zooplus-min.webp" alt="Zooplus partner" />
             </a>
           </div>
           <div
             className={`d-flex w-100 justify-content-center align-items-center gap-10 mb-10`}
           >
-            <img src="./img/Credit_card.png" alt="Credit Card Payement" />
-            <img src="./img/Paypal.png" alt="Paypal Payement" />
-            <img src="./img/Visa.png" alt="Visa Payement" />
-            <img src="./img/Stripe.png" alt="Stripe Payement" />
+            <img src="./img/Credit_card-min.webp" alt="Credit Card Payement" />
+            <img src="./img/Paypal-min.webp" alt="Paypal Payement" />
+            <img src="./img/Visa-min.webp" alt="Visa Payement" />
+            <img src="./img/Stripe-min.webp" alt="Stripe Payement" />
           </div>
           <div
             className={`d-flex w-100 justify-content-center align-items-center gap-10`}
           >
-            <img src="./img/Security.png" alt="Stripe Payement" />
+            <img src="./img/Security-min.webp" alt="Stripe Payement" />
             <p>Payement sécurisé</p>
           </div>
         </div>
@@ -45,19 +45,19 @@ export default function Footer({ handlePage = () => {} }) {
           <div
             className={`d-flex w-100 justify-content-center align-items-center gap-10`}
           >
-            <img src="./img/Smartphone.png" alt="Phone" />
+            <img src="./img/Smartphone-min.webp" alt="Phone" />
             <p>06.44.80.21.65</p>
           </div>
           <div
             className={`d-flex w-100 justify-content-center align-items-center gap-10`}
           >
-            <img src="./img/Gmail.png" alt="Email" />
+            <img src="./img/Gmail-min.webp" alt="Email" />
             <p>contact@lachalledejeux.fr</p>
           </div>
           <div
             className={`d-flex w-100 justify-content-center align-items-center gap-10`}
           >
-            <img src="./img/Google_maps.png" alt="Adress" />
+            <img src="./img/Google_maps-min.webp" alt="Adress" />
             <p>19 rue des Arts, 59000 Lille, France</p>
           </div>
           <nav>
@@ -90,7 +90,9 @@ export default function Footer({ handlePage = () => {} }) {
             <a onClick={() => handlePage(4)}>Contact</a>
             <a onClick={() => handlePage(5)}>Mon Compte</a>
           </nav>
-          <div className={`d-flex p-10 w-100 justify-content-center g-10 ${styles.socials_footer}`}>
+          <div
+            className={`d-flex p-10 w-100 justify-content-center g-10 ${styles.socials_footer}`}
+          >
             <a onClick={() => handlePage(-1)}>
               <i className={`fa-brands fa-facebook-f`}></i>
             </a>
