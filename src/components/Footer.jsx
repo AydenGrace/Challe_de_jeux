@@ -25,17 +25,22 @@ export default function Footer({ handlePage = () => {} }) {
             </a>
           </div>
           <div
-            className={`d-flex w-100 justify-content-center align-items-center gap-10 mb-10`}
+            className={`d-flex w-100 justify-content-center align-items-center gap-10 mb-20 ${styles.icons}`}
           >
-            <img src="./img/Credit_card-min.webp" alt="Credit Card Payement" />
+            <i className={`fa-solid fa-credit-card fa-xl`}></i>
+            <i className={`fa-brands fa-cc-paypal fa-xl`}></i>
+            <i className={`fa-brands fa-cc-visa fa-xl`}></i>
+            <i className={`fa-brands fa-cc-stripe fa-xl`}></i>
+            {/* <img src="./img/Credit_card-min.webp" alt="Credit Card Payement" /> 
             <img src="./img/Paypal-min.webp" alt="Paypal Payement" />
             <img src="./img/Visa-min.webp" alt="Visa Payement" />
-            <img src="./img/Stripe-min.webp" alt="Stripe Payement" />
+            <img src="./img/Stripe-min.webp" alt="Stripe Payement" /> */}
           </div>
           <div
-            className={`d-flex w-100 justify-content-center align-items-center gap-10`}
+            className={`d-flex w-100 justify-content-center align-items-center gap-10  ${styles.icons}`}
           >
-            <img src="./img/Security-min.webp" alt="Stripe Payement" />
+            <i className={`fa-solid fa-shield-halved fa-xl`}></i>
+            {/* <img src="./img/Security-min.webp" alt="Stripe Payement" /> */}
             <p>Payement sécurisé</p>
           </div>
         </div>
@@ -43,21 +48,24 @@ export default function Footer({ handlePage = () => {} }) {
         <div className={`${styles.footer_div}`}>
           <h2>Informations</h2>
           <div
-            className={`d-flex w-100 justify-content-center align-items-center gap-10`}
+            className={`d-flex w-100 justify-content-center align-items-center gap-10 ${styles.icons}`}
           >
-            <img src="./img/Smartphone-min.webp" alt="Phone" />
+            {/* <img src="./img/Smartphone-min.webp" alt="Phone" /> */}
+            <i className={`fa-solid fa-mobile-screen fa-xl`}></i>
             <p>06.44.80.21.65</p>
           </div>
           <div
-            className={`d-flex w-100 justify-content-center align-items-center gap-10`}
+            className={`d-flex w-100 justify-content-center align-items-center gap-10 ${styles.icons}`}
           >
-            <img src="./img/Gmail-min.webp" alt="Email" />
+            <i className={`fa-solid fa-paper-plane fa-xl`}></i>
+            {/* <img src="./img/Gmail-min.webp" alt="Email" /> */}
             <p>contact@lachalledejeux.fr</p>
           </div>
           <div
-            className={`d-flex w-100 justify-content-center align-items-center gap-10`}
+            className={`d-flex w-100 justify-content-center align-items-center gap-10 ${styles.icons}`}
           >
-            <img src="./img/Google_maps-min.webp" alt="Adress" />
+            <i className={`fa-solid fa-location-dot fa-xl`}></i>
+            {/* <img src="./img/Google_maps-min.webp" alt="Adress" /> */}
             <p>19 rue des Arts, 59000 Lille, France</p>
           </div>
           <nav>
